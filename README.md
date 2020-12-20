@@ -13,6 +13,15 @@ This file needs multiple values. Most importantly your Tautulli IP, port and API
 <b>api/get_stats_2020.php</b><br>
 This file needs to know the ID of your movie and show library. It only supports two libraries. The ID can be found in your url when you open the library on the Tautulli website. If your Tautulli API is rooted somewhere other than at `/plexpy` you can override that here as well.
 
+## Running
+
+Requires a webserver with PHP. To get one with docker, run this in the current
+directory:
+
+```
+docker run -d -p 8080:80 --name plex-wrapped -v "$PWD":/var/www/html php:apache
+```
+
 If you are lucky, it could be functional now.
 <br><br><br>
 If you want to change something:

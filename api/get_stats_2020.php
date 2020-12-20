@@ -5,7 +5,7 @@ $config = json_decode(file_get_contents("../config.json"));
 //CONFIGURE THESE!
 $library_id_movies = 1;
 $library_id_shows = 2;
-$plexpy_path_root = "/plexpy";
+$plexpy_path_root = "";
 //
 
 $p_email = $data->p_email;
