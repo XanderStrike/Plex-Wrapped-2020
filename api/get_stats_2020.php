@@ -35,7 +35,7 @@ $name = $response->response->data->data[0]->friendly_name;
 //LOG NAME
 $date = date('m/d/Y h:i:s a', time());
 $logg = "\n" . $date . " - " . $name . " (" . $p_email . ")";
-file_put_contents("log.txt", $logg, FILE_APPEND);
+/* file_put_contents("log.txt", $logg, FILE_APPEND); */
 
 //MOVIES
 $url = "http://" . $config->ip . ":" . $config->plexpy_port . $plexpy_path_root .  "/api/v2?apikey=" . $config->plexpy_apikey . "&cmd=get_history&user_id=" . $id . "&section_id=" . $library_id_movies . "&order_column=full_title&order_dir=asc&length=10000";
